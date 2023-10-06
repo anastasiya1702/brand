@@ -17,7 +17,117 @@
   <!-- HEADER START -->
   <header class="header">
     <div class="container">
-      
+      <div class="header__top">
+        <a class="logo" href="#">
+          <img class="logo__img" src="img/svg/logo.svg" alt="logo">
+        </a>
+        <form class="header__form">
+          <label class="header__label">
+            <input class="header__input" type="text" placeholder="Search">
+          </label>
+          <label class="header__label">
+            <select class="header__select select dropdown-toggle">
+              <option selected>All category</option>
+              <option value="1">...</option>
+              <option value="2">...</option>
+              <option value="3">...</option>
+              <option value="4">...</option>
+            </select>
+          </label>
+          <button class="header__button" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="header__top-menu">
+          <li class="header__top-item">  
+            <a class="header__top-link" href="#">
+              <img class="header__top-img" src="img/svg/user.svg" alt="user">
+              Profile
+            </a>
+          </li>
+          <li class="header__top-item">  
+            <a class="header__top-link" href="#">
+              <img class="header__top-img" src="img/svg/message.svg" alt="message">
+              Message
+            </a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">
+              <img class="header__top-img" src="img/svg/orders.svg" alt="hard">
+              Orders
+            </a>
+          </li>
+          <li class="header__top-item">
+            <a class="header__top-link" href="#">
+              <img class="header__top-img" src="img/svg/cart.svg" alt="orders">
+              My cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__wrapp">
+      <div class="container">
+        <div class="header__bottom">
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  All category
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Hot offers
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Gift boxes
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Projects
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Menu item
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Help
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <form class="menu__form">
+            <label class="menu__form-label">
+              <select class="menu__form-select select menu__form-select--country">
+                <option selected>English, USD</option>
+                <option value="1">...</option>
+                <option value="2">...</option>
+                <option value="3">...</option>
+                <option value="4">...</option>
+              </select>
+            </label>
+            <label class="menu__form-label menu__form-label--flags">
+              <select class="menu__form-select select menu__form-select--flags">
+                <option selected>Ship to</option>
+                <option value="1">...</option>
+                <option value="2">...</option>
+                <option value="3">...</option>
+                <option value="4">...</option>
+              </select>
+            </label>
+          </form>
+        </div>
+      </div>
     </div>
   </header>
   <!-- HEADER END -->
