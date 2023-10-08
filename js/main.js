@@ -20,11 +20,11 @@ $(function () {
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
     return {
-      total,
-      days,
-      hours,
-      minutes,
-      seconds
+      'total': t,
+      'days': days,
+      'hours': hours,
+      'minutes': minutes,
+      'seconds': seconds
     };
   }
 
@@ -54,5 +54,5 @@ $(function () {
 
   const deadline = $('.promo__clock').attr('data-time');
   initializeClock('promo__clock', deadline);
-
+  
 });
