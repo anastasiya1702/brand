@@ -816,7 +816,8 @@ span {
   width: 100%;
 }
 
-.furniture-block {
+.furniture-block,
+.gadgets-block {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -869,4 +870,39 @@ span {
 }
 /**********
 *** FURNITURE END ***
+**********/
+
+/**********
+*** GADGETS START ***
+**********/
+.gadgets {
+  padding-bottom: 20px;
+}
+
+.gadgets__wrapper {
+  display: flex;
+  border: 1px solid var(--grey-300);
+  border-radius: 6px;
+}
+
+.gadgets__images {
+  background-image: url(../img/bg/gadgets-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 338px;
+  height: 260px;
+  padding: 20px;
+}
+
+.gadgets__title {
+  max-width: 154px;
+  width: 100%;
+}
+
+.gadgets-block__item {
+  width: 205px;
+}
+/**********
+*** GADGETS END ***
 **********/
