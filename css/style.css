@@ -906,3 +906,151 @@ span {
 /**********
 *** GADGETS END ***
 **********/
+
+
+/**********
+*** REQUEST START ***
+**********/
+.request {
+  padding-bottom: 20px;
+}
+
+.request__wrapper {
+  background-image: url(../img/bg/request-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 6px;
+  z-index: 1;
+  padding: 41px 31px;
+}
+
+.request__wrapper::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(95deg, #2C7CF1 7.19%, rgba(0, 209, 255, 0.50) 89.49%);
+  border-radius: 6px;
+  z-index: -1;
+}
+
+.request__blok {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+}
+
+.request__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--white);
+  margin-bottom: 13px;
+}
+
+.request__slogan {
+  letter-spacing: -0.2px;
+  color: var(--white);
+}
+
+.request-form {
+  padding: 22px 20px;
+  border-radius: 6px;
+  max-width: 491px;
+  width: 100%;
+  background-color: var(--white);
+  filter: drop-shadow(0px 1px 2px rgba(56, 56, 56, 0.25));
+}
+
+.request-form__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-bottom: 18px;
+}
+
+.request-form__block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.request-form__label,
+.request-form__textarea {
+  max-width: 440px;
+  width: 100%;
+  border: 1px solid var(--grey-300);
+  border-radius: 6px;
+  padding: 11px 10px;
+  margin-bottom: 20px;
+  transition: border, opacity .3s ;
+}
+
+.request-form__label:hover {
+  border: 1px solid var(--grey-200);
+  opacity: 0.6;
+}
+
+.request-form__textarea:hover {
+  border: 1px solid var(--grey-200);
+  opacity: 0.6;
+}
+
+.request-form__input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--black);
+}
+
+.request-form__textarea {
+  max-height: 250px;
+  min-height: 73px;
+}
+
+.request-form__textarea::placeholder {
+  color: var(--grey);
+}
+
+.request-form__box {
+  margin-bottom: 20px;
+}
+
+.request-form__label--quantity,
+.request-form__input--quantity {
+  max-width: 200px;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.request-form__select {
+  max-width: 100px;
+  width: 100%;
+}
+
+.request-form__btn {
+  background-color: var(--blue);
+  border-radius: 6px;
+  padding: 0 16px;
+  align-items: center;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--white);
+  height: 40px;
+  transition: box-shadow .3s;
+}
+
+.request-form__btn:hover {
+  box-shadow: 2px 5px 8px 1px rgba(62, 27, 27, 0.218);
+}
+/**********
+*** REQUEST END ***
+**********/
