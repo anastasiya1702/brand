@@ -194,7 +194,7 @@ img {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.2px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 /**********
 *** COMMON END ***
@@ -1185,4 +1185,45 @@ span {
 }
 /**********
 *** SERVICES END ***
+**********/
+
+/**********
+*** REGIONS START ***
+**********/
+.regions {
+  padding-bottom: 40px;
+}
+
+.regions__block {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px 18px;
+}
+
+.regions__item {
+  display: flex;
+  align-items: center;
+}
+
+.regions__img {
+  object-fit: contain;
+  width: 28px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.regions__name {
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+}
+
+.regions__description {
+  font-size: 13px;
+  line-height: normal;
+  color: var(--grey);
+}
+/**********
+*** REGIONS END ***
 **********/
