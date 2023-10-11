@@ -177,6 +177,21 @@ img {
   box-shadow: 2px 3px 2px 3px rgba(56, 56, 56, 0.08);
 }
 
+.btn-blue {
+  background-color: var(--blue);
+  border-radius: 6px;
+  padding: 0 16px;
+  align-items: center;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--white);
+  height: 40px;
+  transition: box-shadow .3s;
+}
+.btn-blue:hover {
+  box-shadow: 2px 5px 8px 1px rgba(62, 27, 27, 0.218);
+}
+
 .main {
   flex-grow: 1;
   min-height: 100vh;
@@ -652,6 +667,11 @@ span {
   margin-bottom: 7px;
 }
 
+.trend-item__btn--bl:hover,
+.trend-item__btn--wh:hover {
+  box-shadow: 0 2px 3px 3px rgba(33, 15, 15, 0.08);
+}
+
 .trend-item__btn--wh {
   border: 1px solid var(--gray-300);
   background-color: var(--white);
@@ -1043,22 +1063,6 @@ span {
   max-width: 100px;
   width: 100%;
 }
-
-.request-form__btn {
-  background-color: var(--blue);
-  border-radius: 6px;
-  padding: 0 16px;
-  align-items: center;
-  font-weight: 500;
-  line-height: normal;
-  color: var(--white);
-  height: 40px;
-  transition: box-shadow .3s;
-}
-
-.request-form__btn:hover {
-  box-shadow: 2px 5px 8px 1px rgba(62, 27, 27, 0.218);
-}
 /**********
 *** REQUEST END ***
 **********/
@@ -1085,10 +1089,12 @@ span {
   border-radius: 6px;
   border: 1px solid var(--grey-300);
   padding: 10px 16px;
+  transition: all .3s;
 }
 
 .catalog__item:hover {
   box-shadow: 2px 3px 4px 2px rgba(30, 21, 21, 0.08);
+  scale: 1.1;
 }
 
 .catalog__img {
@@ -1226,4 +1232,73 @@ span {
 }
 /**********
 *** REGIONS END ***
+**********/
+
+
+/**********
+*** SUBSCRIPTION START ***
+**********/
+.subscription {
+  padding: 40px 0;
+  background-color: var(--grey-600);
+}
+
+.subscription__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subscription__title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.subscription__text {
+  letter-spacing: -0.2px;
+  margin-bottom: 20px;
+  color: var(--grey-200);
+}
+
+.subscription__form {
+  max-width: 490px;
+  width: 100%;
+  position: relative;
+}
+
+.subscription__form::before {
+  position: absolute;
+  content: url(../img/svg/email.svg);
+  width: 22px;
+  height: 22px;
+  top: 10px;
+  left: 57px;
+}
+
+.subscription__input {
+  max-width: 275px;
+  width: 100%;
+  padding: 8px 36px;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 1px solid var(--grey-300);
+  transition: border .3s;
+}
+
+.subscription__input::placeholder {
+  color: var(--grey);
+}
+
+.subscription__input:hover {
+  border: 1px solid var(--grey-500);
+}
+
+.subscription__input:hover::placeholder {
+  color: var(--grey-200);
+}
+/**********
+*** SUBSCRIPTION END ***
 **********/
