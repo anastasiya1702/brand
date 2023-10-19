@@ -1,5 +1,14 @@
 $(function () {
 
+  $('.trend-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.trend-tabs__top-item').removeClass('trend-tabs__top-item--active');
+    $(this).addClass('trend-tabs__top-item--active');
+
+    $('.trend-tabs__content-item').removeClass('trend-tabs__content-item--active');
+    $($(this).attr('href')).addClass('trend-tabs__content-item--active');
+  });
+
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
