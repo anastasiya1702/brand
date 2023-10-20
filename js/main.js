@@ -1,5 +1,10 @@
 $(function () {
 
+  $('.footer__title').on('click', function () {
+    $(this).siblings().slideToggle();
+    $(this).toggleClass('footer__title-list--active');
+  });
+
   $('.trend-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.trend-tabs__top-item').removeClass('trend-tabs__top-item--active');
@@ -16,10 +21,6 @@ $(function () {
   const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
   const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl));
 
-  $('.footer-top__title').on('click', function () {
-    $(this).siblings().slideToggle();
-    $(this).toggleClass('footer__title-list--active');
-  });
 
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
