@@ -1250,10 +1250,87 @@ span {
   padding: 20px 0 19px 16px;
   transition: box-shadow .3s;
 }
-/* 
-@media screen and (max-width: 1200px) {
-  
-} */
+
+
+@media screen and (max-width: 1220px) {
+  .catalog-images {
+    height: auto;
+    width: 503px;
+  }
+
+  .catalog-block {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .catalog-block__item:nth-child(5),
+  .catalog-block__item:nth-child(6) {
+    border-bottom: 1px solid var(--grey-300);
+  }
+
+  .catalog-block__item:nth-child(8) {
+    border-right: 1px solid var(--grey-300);
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .catalog-block {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .furniture-wrapper,
+  .gadgets-wrapper {
+    flex-direction: column;
+  }
+
+  .catalog-images {
+    width: 100%;
+  }
+
+  .catalog-block {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .catalog-block__item,
+  .gadgets-block__item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .catalog-block {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+    .gadgets-block__item {
+      border-left: none;
+    }
+}
+
+@media screen and (max-width: 412px) {
+  .catalog-block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .catalog-block__item:nth-child(8) {
+    border-right: none;
+  }
+  .catalog-block__item,
+  .gadgets-block__item {
+    border-left: none;
+  }
+
+  .catalog-block__item:nth-child(5),
+  .catalog-block__item:nth-child(6),
+  .catalog-block__item:nth-child(7) {
+    border-bottom: 1px solid var(--grey-300);
+  }
+}
 /**********
 *** FURNITURE END ***
 **********/
