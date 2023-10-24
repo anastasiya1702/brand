@@ -1249,6 +1249,10 @@ span {
   padding: 20px 0 19px 16px;
   transition: box-shadow .3s;
 }
+/* 
+@media screen and (max-width: 1200px) {
+  
+} */
 /**********
 *** FURNITURE END ***
 **********/
@@ -1380,6 +1384,42 @@ span {
 .request-form__select {
   max-width: 100px;
   width: 100%;
+}
+
+@media screen and (max-width: 988px) {
+  .request__wrapper {
+    flex-direction: column;
+  }
+
+  .request__blok {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .request-form__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .request-form__label--quantity,
+  .request-form__input--quantity {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .request-form__label--quantity {
+    margin-bottom: 10px;
+  }
+
+  .request-form__label--select {
+    margin-bottom: 0;
+  }
+
+  .request-form__btn {
+    width: 100%;
+  }
 }
 /**********
 *** REQUEST END ***
