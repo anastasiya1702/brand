@@ -1551,6 +1551,37 @@ span {
   line-height: normal;
   color: var(--grey);
 }
+
+@media screen and (max-width: 988px) {
+  .regions__block {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px 18px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .regions__block {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 18px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .regions__block {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .regions__block {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 18px;
+  }
+}
 /**********
 *** REGIONS END ***
 **********/
